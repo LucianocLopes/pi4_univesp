@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="cabecalho">
+    <div class="tipos-form">
+        <div class="reciclador">
+            <img src={% static "img/reciclador.png" %} alt="" />
+            <h1>
+                Sou reciclador <i class="fas fa-angle-double-right"></i> coleta
+            </h1>
+            <p>Digite seus dados acesso para entrar na plataforma!</p>
+            <form action="">
+                <fieldset id="cnpj">
+                    <legend>Informe seu CNPJ</legend>
+                    <input class="cpf" type="text" name="cnpj" placeholder="Digite seu CNPJ aqui" required/>
+                </fieldset>
+
+                <fieldset id="psw">
+                    <legend>Digite sua senha</legend>
+                    <input class="psw" type="password" name="psw" placeholder="Informe sua senha" required/>
+                </fieldset>
+                <a href="cad-cnpj.html" class="ccnpj">Ainda não tenho cadastro</a>
+                <button class="acessocnpj">ACESSAR PLATAFORMA</button>
+                <div class="redefinir">
+                    <p>Esqueceu a senha?</p>
+                    <a href="#"><p>Redefinir Senha</p></a>
+                </div>
+            </form>
+        </div>
+        <div class="descartador">
+            <img src={% static "img/descarte.png" %} alt="" />
+            <h1>
+                Sou cidadão <i class="fas fa-angle-double-right"></i> descarte
+            </h1>
+            <p>Digite seus dados acesso para entrar na plataforma!</p>
+            <form action="">
+                <fieldset id="cpf">
+                    <legend>Informe seu CPF</legend>
+                        <input class="cpf" type="text" name="cnpj" placeholder="Digite seu CPF aqui" required/>
+                </fieldset>
+                <fieldset id="psw">
+                    <legend>Digite sua senha</legend>
+                    <input class="psw" type="password" name="psw" placeholder="Informe sua senha" required/>
+                </fieldset>
+                <a href="cad-cpf.html" class="ccnpj">Ainda não tenho cadastro</a>
+                <button class="acessocpf">ACESSAR PLATAFORMA</button>
+                <div class="redefinir">
+                    <p>Esqueceu a senha?</p>
+                    <a href="#"><p>Redefinir Senha</p></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
