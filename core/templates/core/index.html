@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="cabecalho">
+    <div class="tipos">
+        <h1>Saiba tudo sobre os principais <span class="eco">tipos de recicláveis</span></h1>
+    </div>
+</div>
+
+<article>
+    <div class="cards">
+        <div class="card-um">
+            <div class="titulo">
+                <img src={% static "img/paper.png" %} alt="" />
+                <h1>Papel</h1>
+            </div>
+            <div class="descricao">
+                <p>
+                A reciclagem de papel é o processo de transformar papel usado ou
+                descartado em novos produtos de papel.
+                </p>
+                <hr/>
+                <i class="fas fa-angle-double-down papel"></i>
+                <p><a href="#">Ler mais</a></p>
+            </div>
+        </div>
+
+        <div class="card-dois">
+            <div class="titulo">
+                <img src={% static "img/plastic.png" %} alt="" />
+                <h1>Plástico</h1>
+            </div>
+            <div class="descricao">
+                <p>
+                A reciclagem de plástico é o processo de transformar resíduos
+                plásticos em novos produtos.
+                </p>
+                <hr />
+                <i class="fas fa-angle-double-down papel"></i>
+                <p><a href="#">Ler mais</a></p>
+            </div>
+        </div>
+
+        <div class="card-tres">
+            <div class="titulo">
+                <img src={% static "img/metal.png" %} alt="" />
+                <h1>Metal</h1>
+            </div>
+            <div class="descricao">
+                <p>
+                A reciclagem de metal é o processo de transformar resíduos
+                metálicos em novos produtos de metal.
+                </p>
+                <hr />
+                <i class="fas fa-angle-double-down papel"></i>
+                <p><a href="#">Ler mais</a></p>
+            </div>
+        </div>
+
+        <div class="card-quatro">
+            <div class="titulo">
+                <img src={% static "img/glass.png" %} alt="" />
+                <h1>Vidro</h1>
+            </div>
+            <div class="descricao">
+                <p>
+                A reciclagem de vidro é o processo de transformar cacos de vidro
+                em novos produtos de vidro.
+                </p>
+                <hr />
+                <i class="fas fa-angle-double-down papel"></i>
+                <p><a href="#">Ler mais</a></p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<div class="cabecalho-info">
+    <div class="semanais">
+        <h1>Notícias da cidade</h1>
+    </div>
+</div>
+
+<div class="eco-ponto">
+    <div class="info">
+        <div class="lojas-eco">
+            <img src="assets/images/eco-loja.png" alt="" />
+            <p class="descreva">
+                <a href="loja-eco.html">
+                Prefeitura de Ferraz de Vasconcelos inaugura primeira loja eco na
+                cidade. Saiba onde</a
+                >
+            </p>
+        </div>
+        <div class="eco-pontos">
+            <img src={% static "img/ecopontos_ferraz.jpg" %} alt="" />
+            <p class="descreva">
+                <a href="#">
+                Saiba onde estão localizados todos os eco-pontos (pontos de coleta
+                seletiva) em nossa cidade</a
+                >
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="form" id="cad-form">
+    <div class="container">
+        <h1 class="form-title">
+            <strong>Faça a diferença!<br><br></strong>
+            Cadastre-se em nossa plataforma e vire um
+            <strong><span class="agt">agente transformador</span></strong>
+        </h1>
+        <form action="cadastro-script.php" method="POST">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="nomeCompleto">Nome Completo</label>
+                    <input type="text" name="nome" placeholder="Ex.: Fulano Beltrano" required/>
+                </div>
+                <div class="user-input-box">
+                    <label for="cpf">Digite seu CPF</label>
+                    <input type="text" name="cpf" placeholder="Ex.: 00000000000" required/>
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Ex.: fulano@dominio.com" required/>
+                </div>
+                <div class="user-input-box">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="Ex.: 11-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" />
+                </div>
+                <div class="user-input-box">
+                    <label for="password">Senha</label>
+                    <input type="password" name="senha" placeholder="Ex.: Delta!@br2000" required/>
+                </div>
+                <div class="user-input-box">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" placeholder="Ex.: Centro" required/>
+                </div>
+            </div>
+            <div class="cad-cnpj">
+                <h4>Sou reciclador. Cadastre-se <a href="participe.html" class="cad-r">aqui</a></h4>
+            </div>
+
+            <div class="form-submit-btn">
+                <input type="submit" value="Fazer cadastro"/>
+            </div>
+        </form>
+    </div>
+    <div class="pessoa">
+        <img src={% static "img/pessoa.png" %} alt="" />
+    </div>
+</div>
+
+<div class="banner-chamada">
+    <div class="chamada">
+        <div class="msg-img">
+            <img src={% static "img/eco.png" %} alt="" />
+            <a href="#"><button>Quero ser um agente transformador</button></a>
+        </div>
+        <div class="msg">
+            <p class="junte">...junte-se à...</p>
+            <p class="ecoferraz">_@ecoferraz</p>
+            <p class="mudanca">...e faça parte da mudança!</p>
+
+            <div class="socials">
+                <p>Siga-nos nas redes sociais</p>
+                <div class="fb">
+                    <i class="fab fa-facebook-square" style="color: #0584e6"></i>@ecoferraz
+                </div>
+                <div class="instagram">
+                    <i class="fab fa-instagram-square" style="color: #ec3ce6"></i>@ecoferraz
+                </div>
+                <div class="youtube">
+                    <i class="fab fa-youtube-square" style="color: #ff2e2e"></i>
+                    <a href="https://www.youtube.com/@EcoFerraz" class="socialslinks">@ecoferraz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

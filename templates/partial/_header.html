@@ -1,0 +1,101 @@
+{% load static %}
+
+<header>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="index.html"><img
+                src={% static "img/logo.jpeg" %}
+                alt="Logotipo da Ecoferraz"
+                title="logotipo colorido da ecoferraz"/>
+            </a>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">
+                        <i class="fas fa-building"></i>
+                        Sobre
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        <i class="fas fa-laptop"></i>
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="participe.html" class="nav-link">
+                        <i class="fas fa-user-plus"></i>
+                        Participe
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">
+                        <i class="fas fa-phone-volume"></i>
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="login">
+            <button>
+                <a href="plataforma.html">ÁREA DE ASSOCIADOS</a>
+            </button>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="mostrarMenu()">
+                <img class="icone" src={% static "img/menu_white_36dp.svg" %} alt="" />
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="sobre.html" class="nav-link">
+                    <i class="fas fa-building"></i>
+                    Sobre
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">
+                    <i class="fas fa-laptop"></i>
+                    Blog
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="participe.html" class="nav-link">
+                    <i class="fas fa-user-plus"></i>
+                    Participe
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contato.html" class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    Contato
+                </a>
+            
+            </li>
+        </ul>
+
+        <div class="login">
+          <button>
+            <a href="participe.html">ÁREA DE ASSOCIADOS</a>
+            </button>
+        </div>
+    </div>
+</header>
