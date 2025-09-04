@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     # 3td apps
     # myapps
     'core',
+    'contact',
 ]
 
 MIDDLEWARE = [

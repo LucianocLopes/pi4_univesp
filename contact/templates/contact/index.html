@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="cabecalho">
+    <div class="tipos-contato">
+        <div class="atendente">
+            <img src={% static "img/atendimento-ecoferraz.png" %} alt="" />
+        </div>
+        <div class="texto">
+            <h2>Se você é reciclador, envie-nos um e-mail solicitando a lista de nossos parceiros que fazem o descarte de material reciclado!</h2>
+            <br>
+            <p>
+                Escolha um dos canais de comunicação abaixo e envie-nos suas
+                dúvidas, críticas ou sugestões
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="canais">
+    <div class="email">
+        <div class="logo-email">
+            <i class="far fa-envelope"></i>
+        </div>
+        <div class="end-email">atendimento@ecoferraz.com.br</div>
+    </div>
+    <div class="whatsapp">
+        <div class="logo-whatsapp">
+          <i class="fab fa-whatsapp-square"></i>
+        </div>
+        <div class="num-whatsapp">(11) 99999-0000</div>
+    </div>
+    <div class="telefone">
+        <div class="phone"><i class="fas fa-phone-square"></i></div>
+        <div class="phone">(11) 0000-0000</div>
+    </div>
+</div>
+
+{% endblock content %}
