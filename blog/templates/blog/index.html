@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="cabecalho">
+    <div class="tipos">
+        <h1>
+            BLOG | Os diferentes tipos
+            de reciclagens
+        </h1>
+    </div>
+</div>
+
+<article>
+    <div class="materias">
+        <div class="mecanica">
+            <div class="imagem-mecanica">
+                <img src={% static "img/reciclagem_mecanica.jpg" %} alt="" />
+                <div class="btns">
+                    <button class="doar"><a href="participe.html">Quero doar</a></button>
+                    <button class="coletar"><a href="participe.html">Quero coletar</a></button>
+                </div>
+            </div>
+            <div class="texto-mecanica">
+                <h3>Reciclagem Mecânica</h3>
+                <p>
+                    A reciclagem mecânica é o processo de conversão de materiais de
+                    resíduos em novos materiais sem alterar a estrutura química do
+                    material. Envolve a coleta, separação, trituração e
+                    reprocessamento de materiais recicláveis em novos produtos.
+                </p>
+
+                <p class="exemplo">Exemplos de reciclagem mecânica:</p>
+                <ul>
+                    <li>
+                        <strong>Reciclagem de papel:</strong> transformar papel usado em
+                        novos produtos de papel, como caixas, papelão e papel higiênico.
+                    </li>
+                    <li>
+                        <strong>Reciclagem de plástico:</strong> transformar garrafas de
+                        plástico e outros recipientes em novos produtos de plástico,
+                        como móveis de jardim e roupas.
+                    </li>
+                    <li>
+                        <strong>Reciclagem de metal:</strong> transformar latas de
+                        alumínio e outros metais em novos produtos de metal, como carros
+                        e bicicletas.
+                    </li>
+                    <li>
+                        <strong>Reciclagem de vidro:</strong> transformar garrafas de
+                        vidro e outros recipientes em novos produtos de vidro, como
+                        garrafas e vasos.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mecanica">
+            <div class="imagem-mecanica">
+                <img src={% static "img/reciclagem_organica.png" %} alt="" />
+                <div class="btns">
+                    <button class="doar"><a href="participe.html">Quero doar</a></button>
+                    <button class="coletar"><a href="participe.html">Quero coletar</a></button>
+                </div>
+            </div>
+            <div class="texto-mecanica">
+                <h3>Reciclagem Orgânica</h3>
+                <p>
+                    É o processo de conversão de materiais orgânicos de resíduos em
+                    novos materiais. Compostagem: converter restos de comida e aparas
+                    de jardim em composto que pode ser usado para melhorar a qualidade
+                    do solo.
+                </p>
+
+                <p class="exemplo">Benefícios da Reciclagem Orgânica:</p>
+                <ul>
+                    <li>Reduz a poluição.</li>
+                    <li>Conserva os recursos naturais.</li>
+                    <li>Protege os habitats da vida selvagem.</li>
+                    <li>Reduz as emissões de gases de efeito estufa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mecanica">
+            <div class="imagem-mecanica">
+                <img src={% static "img/reciclagem_quimica.jpg" %} alt="" />
+                <div class="btns">
+                    <button class="doar"><a href="participe.html">Quero doar</a></button>
+                    <button class="coletar"><a href="participe.html">Quero coletar</a></button>
+                </div>
+            </div>
+            <div class="texto-mecanica">
+                <h3>Reciclagem Química</h3>
+                <p>
+                    A reciclagem química é o processo de conversão de materiais de
+                    resíduos em novos materiais por meio de reações químicas. Envolve
+                    a quebra de moléculas de materiais recicláveis em seus componentes
+                    básicos e depois remontá-las em novos produtos.
+                </p>
+
+                <p class="exemplo">Exemplos de reciclagem química:</p>
+                <ul>
+                    <li>
+                    <strong>Reciclagem de pneus:</strong> converter pneus usados em
+                    óleo e gás que podem ser usados como combustíveis ou produtos
+                    químicos.
+                    </li>
+                    <li>
+                    <strong>Reciclagem de plástico:</strong> converter plástico
+                    usado em produtos químicos que podem ser usados para fazer novos
+                    produtos de plástico.
+                    </li>
+                    <li>
+                    <strong>Reciclagem de têxteis:</strong> converter roupas usadas
+                    em fibras que podem ser usadas para fazer novos produtos
+                    têxteis.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock content %}
