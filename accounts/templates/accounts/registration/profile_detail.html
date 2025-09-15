@@ -1,0 +1,8 @@
+{% extends 'base.html' %}  <!-- Opcional: extenda um template base para manter o layout -->
+{% load static %}
+
+{% block content %}
+<h1>{{ user_to_display.username }}'s Profile</h1>
+<p>Email: {{ user_to_display.email }}</p>
+
+{% endblock %}

@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'contact',
     'blog',
     'register',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -116,6 +117,15 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Redirect to home URL after login (Default redirects to /accounts/profile/)
-# LOGIN_URL = "login"
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# LOGIN_URL = 'accounts/login'
+# LOGOUT_URL = 'accounts/logout'
 # LOGOUT_REDIRECT_URL = LOGIN_URL
+# LOGIN_REDIRECT_URL = '/'
+
+# Configuração para página não encontrada (404)
+# handler404 = 'core.views.pagina_nao_encontrada'
+
+# # Configuração para erro interno do servidor (500)
+# handler500 = 'core.views.erro_servidor'

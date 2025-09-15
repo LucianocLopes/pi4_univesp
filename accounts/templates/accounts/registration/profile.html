@@ -1,0 +1,11 @@
+{% extends 'base.html' %}  <!-- Opcional: extenda um template base para manter o layout -->
+{% load static %}
+
+{% block content %}
+    <h2>Edit Profile</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+{% endblock %}
