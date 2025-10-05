@@ -1,101 +1,53 @@
 {% load static %}
-
 <header>
-    <div class="nav-bar">
-        <div class="logo">
-            <a href="index.html"><img
-                src={% static "img/logo.jpeg" %}
-                alt="Logotipo da Ecoferraz"
-                title="logotipo colorido da ecoferraz"/>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a href="{% url "core:index" %}" class="navbar-brand d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src={% static "img/logo.jpeg" %} alt="Logotipo da Ecoferraz" title="logotipo colorido da ecoferraz" class="d-inline-block align-text-top" style="width:80%"/>
             </a>
-        </div>
-
-        <div class="nav-list">
-            <ul>
-                <li class="nav-item">
-                    <a href={% url "core:index" %} class="nav-link">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href={% url "core:about_us" %} class="nav-link">
-                        <i class="fas fa-building"></i>
-                        Sobre
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href={% url "blog:index" %} class="nav-link">
-                        <i class="fas fa-laptop"></i>
-                        Blog
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href={% url "register:index" %} class="nav-link">
-                        <i class="fas fa-user-plus"></i>
-                        Participe
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href={% url "contact:index" %} class="nav-link">
-                        <i class="fas fa-phone-volume"></i>
-                        Contato
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="login">
-            <button>
-                <a href={% url "register:index" %}>ÁREA DE ASSOCIADOS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meuNavbar" aria-controls="meuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
 
-        <div class="mobile-menu-icon">
-            <button onclick="mostrarMenu()">
-                <img class="icone" src={% static "img/menu_white_36dp.svg" %} alt="" />
-            </button>
-        </div>
-    </div>
+            <div class="collapse navbar-collapse" id="meuNavbar">
+                
+                <ul class="navbar-nav mb-2 mb-sm-0 navbar-nav-center d-flex">
+                    <li class="nav-item text-secondary">
+                        <a href={% url "core:index" %} class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={% url "core:about_us" %} class="nav-link">
+                            <i class="fas fa-building"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={% url "blog:index" %} class="nav-link">
+                            <i class="fas fa-laptop"></i>
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={% url "register:index" %} class="nav-link">
+                            <i class="fas fa-user-plus"></i>
+                            Participe
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={% url "contact:index" %} class="nav-link">
+                            <i class="fas fa-phone-volume"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
 
-    <div class="mobile-menu">
-        <ul>
-            <li class="nav-item">
-                <a href={% url "core:index" %} class="nav-link">
-                    <i class="fas fa-home"></i>Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href={% url "core:about_us" %} class="nav-link">
-                    <i class="fas fa-building"></i>
-                    Sobre
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href={% url "blog:index" %} class="nav-link">
-                    <i class="fas fa-laptop"></i>
-                    Blog
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href={% url "register:index" %} class="nav-link">
-                    <i class="fas fa-user-plus"></i>
-                    Participe
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href={% url "contact:index" %} class="nav-link">
-                    <i class="fas fa-phone-volume"></i>
-                    Contato
-                </a>
-            
-            </li>
-        </ul>
-
-        <div class="login">
-          <button>
-            <a href={% url "register:index" %}>ÁREA DE ASSOCIADOS</a>
-            </button>
+                <div class="d-flex ms-sm-auto btn">
+                    <button class="btn btn-associado" type="button">Area do associado</button>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
 </header>
